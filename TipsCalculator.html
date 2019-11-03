@@ -1,0 +1,51 @@
+
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tip Calculator</title>
+	<link rel="stylesheet" type="text/css" href="CSS/normalize.css">
+	
+	<link rel="stylesheet" type="text/css" href="CSS/Style.css">
+</head>
+
+<body>
+<div id="main-container">
+    <div id="calculator">
+	<form action="POST">
+		<h1>Tip Calculator</h1>
+		<label>
+			How much was your bill?
+			<br>
+			$<input type="text" name="totalBill">
+		</label>
+		<br><br>
+		<label>
+			How was your service?
+			<br>
+			<select>
+				<option disabled="true" selected="true" value="0">
+				--Choose an option--</option>
+				<option value="0.3">30% - Outstanding</option>
+				<option value="0.2">20% - Good</option>
+				<option value="0.15">15% - Okay</option>
+				<option value="0.10">10% - Bad</option>
+				<option value="0.05">5% - Terrible</option>
+			</select>
+		</label>
+		<br>
+		<br>
+		<label>
+			How many people are sharing the bill?
+			<br>
+			<input type="text" name="numOfPeople">
+		</label>
+		<br>
+		<br>
+		<button type="button" id="calculate">Calculate</button>
+	</form>
+    </div><!--Calculator-->
+</div><!--main container-->
+
+</body>
+</html>
